@@ -243,6 +243,16 @@ p{
     .iconos1 h3 {
         font-size: 0.85rem;
     }
+    .problematicas-txt p {
+        font-size: 0.85rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .iconos2 li h3 {
+        font-size: 0.85rem!important;
+        margin-right: rem!important;
+
+    }
 }
 /* iconos2 en columna y con viñetas */
 .iconos2 {
@@ -391,7 +401,24 @@ table th, table td {
         min-width: unset;
         box-sizing: border-box;
     }
+    
+    .texto-item {
+        font-size: 0.7rem !important;
+        padding: 0 2px 0.5rem 2;
+        max-width: 98vw;
+    }
+    .texto-p{
+        font-size: 0.7rem !important;
+        padding: 0 2px 0.5rem 2;
+        max-width: 98vw;
+    }
+    
+    .texto-item {
+
+    }
 }
+
+
 
 .fila-imagenes, .fila-textos {
     display: flex;
@@ -446,13 +473,14 @@ table th, table td {
 
 .texto-item {
     text-align: center;
+    display: inline-block;   /* Permite centrar el div dentro del td */
+    margin: 0 auto;          /* Centra horizontalmente */
     font-size: 1rem;
-    color: #222;
+    color: #ffffff;
     margin-top: 0.5rem;
     word-break: break-word;
-    padding: 0 0 0.5rem; /* Espacio interno */
+    padding: 0 0 0.5rem;
     max-width: 90%;
-    margin-left: 10px;
 }
 /* Responsivo */
 @media (max-width: 600px) {
@@ -463,6 +491,28 @@ table th, table td {
     width: 70px;
     font-size: 0.85rem;
     }
+    #header {
+        width: 100vw;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        text-align: center;
+    }
+    #wrapper1,
+    #home,
+    .info-esp,
+    #prob {
+        width: 90vw;
+        max-width: 90vw;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    #home {
+        height: auto !important;
+        min-height: 60vh;
+        padding: 2rem 2rem 2rem 1rem  !important;
+
+    }
+
 }
 
 
@@ -587,12 +637,7 @@ table {
 
 }
 
-td, th {
- /* Bordes en todas las celdas */
-    width: 33.33%;
-    vertical-align: top;
-    text-align: center;
-}
+
 
 
 #info-hard,
@@ -615,3 +660,14 @@ td, th {
     transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
 }
+
+.ul-participaciones {
+    text-align: left;
+    padding-right: 0;
+    margin-right: 0;
+    
+}
+.ul-participaciones li {
+    color: #272727;
+}
+
