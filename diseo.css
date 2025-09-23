@@ -253,6 +253,11 @@ p{
         margin-right: rem!important;
 
     }
+    
+    .lineas {
+        width: 80vw;      /* Se adapta al ancho de la pantalla */
+        margin: 1rem auto; /* Centra la línea horizontalmente */
+    }
 }
 /* iconos2 en columna y con viñetas */
 .iconos2 {
@@ -670,4 +675,5 @@ table {
 .ul-participaciones li {
     color: #272727;
 }
+
 
