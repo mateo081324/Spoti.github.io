@@ -251,12 +251,7 @@ p{
     .iconos2 li h3 {
         font-size: 0.85rem!important;
         margin-right: rem!important;
-    
-    }
-    
-    .lineas {
-        width: 80vw;      /* Se adapta al ancho de la pantalla */
-        margin: 1rem auto; /* Centra la línea horizontalmente */
+
     }
 }
 /* iconos2 en columna y con viñetas */
@@ -288,14 +283,14 @@ p{
     display: inline-block;
 }
 
-table {
+/* table {
     border: 1px solid #ddd;
 
 }
 
 table th, table td {
     border: 1px solid #ddd; 
-}
+} */
 
 .info-esp{
     background-image: linear-gradient(30deg, #9add2fe6, #faebd7);
@@ -408,12 +403,6 @@ table th, table td {
     }
     
     .texto-item {
-        font-size: 0.7rem !important;
-        padding: 0 2px 0.5rem 2;
-        max-width: 98vw;
-    }
-    
-    .texto-item {
         font-size: 0.8rem !important;
 
     }
@@ -430,10 +419,12 @@ table th, table td {
         font-size: 0.8rem !important;
 
     }
-    
-    .texto-item {
 
+    .lineas {
+        width: 80vw;      /* Se adapta al ancho de la pantalla */
+        margin: 1rem auto; /* Centra la línea horizontalmente */
     }
+
 }
 
 
@@ -688,6 +679,3 @@ table {
 .ul-participaciones li {
     color: #272727;
 }
-
-
-
