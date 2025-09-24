@@ -51,7 +51,7 @@ html, body {
     height: 29rem; /*tamaño de imagen dentro del cuadro*/
     overflow: hidden;
 
-    color: rgba(255, 255, 255, 0.75); /* color texto */
+    color: #FFF; /* color texto */
     cursor: default;
     position: relative;
     padding: 5rem 3rem;
@@ -64,7 +64,7 @@ html, body {
 }
 
 #home .content button {
-    background-color: #1db954;   /* Verde tipo Spotify */
+    background-color: #2e533f;   /* Verde tipo Spotify */
     color: #fff;
     border: none;
     border-radius:  2rem;
@@ -76,7 +76,9 @@ html, body {
     display: inline-block;
 }
 #home .content button:hover {
-    background-color: #169c43;   /* Verde más oscuro al pasar el mouse */
+    background-color: #1d3327;   /* Verde más oscuro al pasar el mouse */
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 #home .content button a {
@@ -123,7 +125,7 @@ html, body {
     width: 30rem;
     max-width: 90%;
     margin: 0 auto;
-    background-image: linear-gradient(130deg, #9add2fe6, #faebd7); /* efecto colores */
+    background-image: linear-gradient(130deg, #2f9a5f, #f3f1e7); /* efecto colores */
     border-radius: 0.325rem;
     text-align: center;
     padding: 6rem 6rem;     /* Aumenta el alto y el espacio interno */
@@ -293,7 +295,7 @@ table th, table td {
 } */
 
 .info-esp{
-    background-image: linear-gradient(30deg, #9add2fe6, #faebd7);
+    background-image: linear-gradient(30deg, #2f9a5f, #f3f1e7);
     width: 100%;
     max-width: 60rem;
     margin: auto;
@@ -329,7 +331,7 @@ table th, table td {
 
 #btn-mas-hard {
     display: block; /* lo cambio a block si lo cambio de posición */
-    background-color: #1db954; 
+    background-color: #2e533f; 
     color: #fff;
     border:none;
     border-radius: 2rem;
@@ -340,15 +342,15 @@ table th, table td {
     align-items: self-start; /* Alinea el botón al inicio */
 }
 #btn-mas-hard:hover {
-    background-color: #169c43;
-    transform: scale(1.05);
+    background-color: #1d3327;
+    cursor: pointer;
 }
 
 
 
 #btn-mas-soft {
     display: block;
-    background-color: #1db954;
+    background-color: #2e533f;
     color: #fff;
     border: none;
     border-radius: 2rem;
@@ -359,14 +361,14 @@ table th, table td {
     flex-wrap: wrap;
 }
 #btn-mas-soft:hover {
-    background-color: #169c43;
-    transform: scale(1.05);
+    background-color: #1d3327;
+    cursor: pointer;
 }
 
 
 #btn-mas-p {
     display: block;
-    background-color: #1db954;
+    background-color: #2e533f;
     color: #fff;
     border: none;
     border-radius: 2rem;
@@ -376,8 +378,8 @@ table th, table td {
     transition: background 0.3s;
 }
 #btn-mas-p:hover {
-    background-color: #169c43;
-    transform: scale(1.05);
+    background-color: #1d3327;
+    cursor: pointer;
 }
 
 
@@ -474,22 +476,34 @@ table th, table td {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 8rem; /* Reduce este valor para menos espacio */
+    gap: 1rem;
     margin-top: 0;
-    box-shadow: 0 5px 10px #000;
+    /* box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08); */
+    border-radius: 1rem;
+    width: 80%;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
 .texto-item {
     text-align: center;
-    display: inline-block;   /* Permite centrar el div dentro del td */
-    margin: 0 auto;          /* Centra horizontalmente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1rem;
-    color: #ffffff;
+    color: #fff;
     margin-top: 0.5rem;
     word-break: break-word;
-    padding: 0 0 0.5rem;
-    max-width: 90%;
+    padding: 0.5rem;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 190px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 0.9rem;
+    min-width: 100px;
+    max-width: 230px;
 }
 /* Responsivo */
 @media (max-width: 600px) {
@@ -535,7 +549,7 @@ table th, table td {
     letter-spacing: 1px;
 }
 #ev p {
-    color: #383838;
+    color: #FFF;
     font-weight: 400;
     margin-bottom: 2rem;
     text-align: center;
@@ -601,7 +615,7 @@ table th, table td {
 
 .card .back {
     transform: perspective(600px) rotateY(180deg);
-    background: #9add2f94;
+    background: #2f9a5fa2 ;
     padding: 15px;
     color: #f3f3f3;
     display: flex;
@@ -652,7 +666,7 @@ table {
 #info-hard,
 #info-soft,
 #info-p {
-    color: #222;
+    color: #FFF;
     border-radius: 1rem;
     padding: 1rem 1rem;
     margin: 1rem auto 0 auto; /* Centra el div dentro del td */
@@ -677,5 +691,5 @@ table {
     
 }
 .ul-participaciones li {
-    color: #272727;
+    color: #fff;
 }
